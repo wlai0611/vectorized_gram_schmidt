@@ -18,6 +18,8 @@ def gram_schmidt(A):
     return Q,R
 
 Q,R = gram_schmidt(A)
+print('if Q is an orthogonal basis then, Q transposed * Q shuld be the identity matrix')
 print(Q.T@Q) # should be identity
+print('Q * R should return the original matrix')
 print(Q@R) # should be A
 print()
